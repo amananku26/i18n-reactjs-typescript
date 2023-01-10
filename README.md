@@ -7,16 +7,17 @@ append the URL with ?lng=hi to change the language
 3. import "./i18n" in.      ---> https://github.com/amananku26/i18n-reactjs-typescript/blob/main/src/index.tsx 
 
 --------
-import "./styles.css";
-**import { useTranslation } from "react-i18next";**
+**app.tsx**
+```import "./styles.css";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
-  **const { t } = useTranslation();**
+  const { t } = useTranslation();
   return (
     <div className="App">
-      **{t("text1")}**
+      {t("text1")}
     </div>
   );
-}
+}```
 
 use this way to get the translation
